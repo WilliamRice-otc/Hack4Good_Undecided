@@ -1,0 +1,549 @@
+/*
+    This stylesheet contains definitions for general animations
+    in the x-css library.
+    These come in two forms:
+        1.) Premade Classes - apply these classes to objects
+                              to apply an entirely preconfigured animation
+        2.) Premade Keyframes - use these combined with animation
+                                properties to make your own animated classes
+*/
+
+/*#region Classes */
+
+    /*#region no-overflow */
+    /* to hide overflow on animations that work off screen */
+        .no-overflow {
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-y: hidden; /* Hide vertical scrollbar */
+            white-space: nowrap; /* Prevent line breaks in case of very narrow viewport */
+        }
+    /*#endregion */
+
+    /*#region slide-in-left */
+        /* Three options, decreasing in speed */
+            .slide-in-left-fast {
+                animation: slide-in-left 500ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-left-medium {
+                animation: slide-in-left 1000ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-left-slow {
+                animation: slide-in-left 1500ms;
+                animation-timing-function: ease-out;
+            }
+    /*#endregion */
+
+    /*#region slide-in-right */
+        /* Three options, decreasing in speed */
+            .slide-in-right-fast {
+                animation: slide-in-right 500ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-right-medium {
+                animation: slide-in-right 1000ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-right-slow {
+                animation: slide-in-right 1500ms;
+                animation-timing-function: ease-out;
+            }
+    /*#endregion */
+    /*#region slide-in-above */
+        /* Three options, decreasing in speed */
+            .slide-in-above-fast {
+                animation: slide-in-above 500ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-above-medium {
+                animation: slide-in-above 1000ms;
+                animation-timing-function: ease-out;
+            }
+
+            .slide-in-above-slow {
+                animation: slide-in-above 1500ms;
+                animation-timing-function: ease-out;
+            }
+    /*#endregion */
+    /*#region drop-in-left */
+        /* Three options, decreasing in speed */
+            .drop-in-left-fast {
+                animation: drop-in-left 500ms;
+            }
+
+            .drop-in-left-medium {
+                animation: drop-in-left 1000ms;
+            }
+
+            .drop-in-left-slow {
+                animation: drop-in-left 1500ms;
+            }
+    /*#endregion */
+    /*#region drop-in-right */
+        /* Three options, decreasing in speed */
+            .drop-in-right-fast {
+                animation: drop-in-right 500ms;
+            }
+
+            .drop-in-right-medium {
+                animation: drop-in-right 1000ms;
+            }
+
+            .drop-in-right-slow {
+                animation: drop-in-right 1500ms;
+            }
+    /*#endregion */
+    /*#region spin */
+        /* two orientations: clockwise and counter-clockwise */
+        /* three options : half, whole, and infinite */
+
+            .spin-clockwise-half {
+                animation: half-spin-clockwise 1000ms;
+            }
+
+            .spin-clockwise-whole {
+                animation: spin-clockwise 1000ms;
+            }
+
+            .spin-clockwise-infinite {
+                animation: spin-clockwise 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            
+            .spin-counter-clockwise-half {
+                animation: half-spin-counter-clockwise 1000ms;
+            }
+
+            .spin-counter-clockwise-whole {
+                animation: spin-counter-clockwise 1000ms;
+            }
+
+            .spin-counter-clockwise-infinite {
+                animation: spin-counter-clockwise 1000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+    /*#endregion */
+    /*#region breathe */
+        /* Three scale option - big, small, medium */
+        /* append -hover to apply on hover*/
+
+            .breathe-big {
+                animation: breathe-big 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-big-hover:hover {
+                animation: breathe-big 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+
+            .breathe-medium {
+                animation: breathe-medium 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-medium-hover:hover {
+                animation: breathe-medium 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-small {
+                animation: breathe-small 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .breathe-small-hover:hover {
+                animation: breathe-small 1500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .hyperventilate {
+                animation: breathe-small 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .hyperventilate-hover:hover {
+                animation: breathe-small 500ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+            }
+    /* #endregion */
+    /*#region bounce-in */
+        .bounce-in-left {
+            animation: bounce-in-left 600ms;
+            animation-timing-function: ease-out;
+        }
+
+        .bounce-in-right {
+            animation: bounce-in-right 600ms;
+            animation-timing-function: ease-out;
+        }
+    /*#endregion */
+        .fade-in-fast {
+            animation: fade-in 1000ms;
+            animation-timing-function: ease-out;
+        }
+
+        .fade-in-medium {
+            animation: fade-in 1500ms;
+            animation-timing-function: ease-out;
+        }
+
+        .fade-in-slow {
+            animation: fade-in 2000ms;
+            animation-timing-function: ease-out;
+        }
+
+        .fade-out-fast {
+            animation: fade-out 1000ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .fade-out-medium {
+            animation: fade-out 1500ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .fade-out-slow {
+            animation: fade-out 2000ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .inflate-fast {
+            animation: inflate 500ms;
+            animation-timing-function: ease-out;
+        }
+
+        .inflate-medium {
+            animation: inflate 1000ms;
+            animation-timing-function: ease-out;
+        }
+
+        .inflate-slow {
+            animation: inflate 1500ms;
+            animation-timing-function: ease-out;
+        }
+
+        .deflate-fast {
+            animation: deflate 500ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .deflate-medium {
+            animation: deflate 1000ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .deflate-slow {
+            animation: deflate 1500ms;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        .fade-inflate-fast {
+            animation-name: fade-in, inflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1000ms, 1000ms;
+        }
+
+        .fade-inflate-medium {
+            animation-name: fade-in, inflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1500ms, 1500ms;
+        }
+
+        .fade-inflate-slow {
+            animation-name: fade-in, inflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 2000ms, 2000ms;
+        }
+
+        .fade-deflate-fast {
+            animation-name: fade-out, deflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1000ms, 1000ms;
+            animation-fill-mode: forwards, forwards;
+        }
+
+        .fade-deflate-medium {
+            animation-name: fade-out, deflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 1500ms, 1500ms;
+            animation-fill-mode: forwards, forwards;
+        }
+
+        .fade-deflate-slow {
+            animation-name: fade-out, deflate;
+            animation-timing-function: ease-out, ease-out;
+            animation-duration: 2000ms, 2000ms;
+            animation-fill-mode: forwards, forwards;
+        }
+/*#endregion Classes */
+
+/* Events */
+
+
+/*#region Keyframes */
+
+    /* name: slide-in-left */
+    /* purpose: slides in an object from beyond the left side of the screen */
+    @keyframes slide-in-left {
+        from {
+            transform: translateX(-100vw);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    /* name : slide-in-right */
+    /* purpose: slides in an object from beyond the right side of the screen */
+    @keyframes slide-in-right {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    /* name: slide-in-above */
+    /* purpose: slides in an object from above */
+    @keyframes slide-in-above {
+        from {
+            opacity: 0;
+            transform: translateY(-100vh);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    /* name : drop-in-left */
+    /* purpose: drop in an object from above and to the left of the object location */
+    @keyframes drop-in-left {
+        from {
+            transform: rotate(-30deg) translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: rotate(0deg) translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    /* name : drop-in-right */
+    /* purpose: drop in an object from above and to the right of the object location */
+    @keyframes drop-in-right {
+        from {
+            transform: rotate(30deg) translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: rotate(0deg) translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    /* name : spin-clockwise */
+    /* purpose: spin an object in the clockwise direction */
+    @keyframes spin-clockwise {
+        from {
+            transform: rotate(0turn);
+        }
+        to {
+            transform: rotate(1turn)
+        }
+    }
+
+    /* name : spin-counter-clockwise */
+    /* purpose: spin an object in the counter-clockwise direction */
+    @keyframes spin-counter-clockwise {
+        from {
+            transform: rotate(0turn);
+        }
+        to {
+            transform: rotate(-1turn)
+        }
+    }
+
+    /* name : half-spin-clockwise */
+    /* purpose: half-spin an object in the clockwise direction */
+    @keyframes half-spin-clockwise {
+        from {
+            transform: rotate(0.5turn);
+        }
+        to {
+            transform: rotate(1turn)
+        }
+    }
+
+    /* name : half-spin-counter-clockwise */
+    /* purpose: half-spin an object in the counter-clockwise direction */
+    @keyframes half-spin-counter-clockwise {
+        from {
+            transform: rotate(-0.5turn);
+        }
+        to {
+            transform: rotate(-1turn);
+        }
+    }
+
+    /* name : breathe-big */
+    /* purpose : have an object 'breathe' with large difference in scale */
+    @keyframes breathe-big {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+        transform: scale(1.5);
+        }
+        100% {
+        transform: scale(1);
+        }
+    }
+
+    /* name : breathe-medium */
+    /* purpose : have an object 'breathe' with medium difference in scale */
+    @keyframes breathe-medium {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.25);
+        }
+        100% {
+        transform: scale(1);
+        }
+    }
+
+    /* name : breathe-small */
+    /* purpose : have an object 'breathe' with small difference in scale */
+    @keyframes breathe-small {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.15);
+        }
+        100% {
+        transform: scale(1);
+        }
+    }
+
+    /* name : bounce-in-left */
+    /* purpose : have an object bounce in from the left with small bounces */
+    @keyframes bounce-in-left {
+        0% {
+            transform: translateY(0%) translateX(-100%);
+            opacity: 0;
+        }
+        20% {
+            transform: translateY(-80%) translateX(-80%);
+            opacity: 1;
+        }
+        40% {
+            transform: translateY(-20%) translateX(-50%);
+        }
+        60% {
+            transform: translateY(-60%) translateX(-30%);
+        }
+        80% {
+            transform: translateY(-30%) translateX(-15%);
+        }
+        100% {
+            transform: translateY(0%) translateX(0%);
+        }
+    }
+
+    /* name : bounce-in-right */
+    /* purpose : have an object bounce in from the right with small bounces */
+    @keyframes bounce-in-right {
+        0% {
+            transform: translateY(0%) translateX(100%);
+            opacity: 0;
+        }
+        20% {
+            transform: translateY(-80%) translateX(80%);
+            opacity: 1;
+        }
+        40% {
+            transform: translateY(-20%) translateX(50%);
+        }
+        60% {
+            transform: translateY(-60%) translateX(30%);
+        }
+        80% {
+            transform: translateY(-30%) translateX(15%);
+        }
+        100% {
+            transform: translateY(0%) translateX(0%);
+        }
+    }
+    /* name : fade in */
+    /* purpose : fade an object in */
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;;
+        }
+    }
+
+    /* name : fade out */
+    /* purpose : fade an object out */
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;;
+        }
+    }
+
+    /* name : inflate */
+    /* purpose : grow an object into the frame */
+    @keyframes inflate {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    /* name : deflate */
+    /* purpose : shrink an object from the frame */
+    @keyframes deflate {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(0);
+        }
+    }
+/*#endregion Keyframes */
