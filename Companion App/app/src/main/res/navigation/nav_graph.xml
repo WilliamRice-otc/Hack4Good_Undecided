@@ -5,6 +5,17 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/FirstFragment">
 
+    <!--  Sidebar Actions  -->
+    <action
+        android:id="@+id/action_global_to_caseworker"
+        app:destination="@id/fragment_case_worker_contact"
+        />
+
+    <action
+        android:id="@+id/action_global_to_firstFragment"
+        app:destination="@id/FirstFragment"
+        />
+
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.myfirstapp.FirstFragment"
@@ -14,6 +25,12 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_case_worker_contact"
+        android:name="com.example.myfirstapp.caseWorkerContact"
+        android:label=""
+        tools:layout="@layout/fragment_case_worker_contact">
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"

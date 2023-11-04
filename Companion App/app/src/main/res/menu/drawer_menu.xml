@@ -4,9 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.myfirstapp.MainActivity">
     <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/book_icon"
+        android:title="" />
+    <item
         android:id="@+id/nav_curriculum"
         android:icon="@drawable/book_icon"
-        android:title=""/>
+        android:title="" />
     <item
         android:id="@+id/nav_quizzes"
         android:icon="@drawable/magnifying_glass_icon"
@@ -14,7 +18,8 @@
     <item
         android:id="@+id/nav_accountabilities"
         android:icon="@drawable/quill_icon"
-        android:title=""/>
+        android:title=""
+        />
     <item
         android:id="@+id/nav_case_worker"
         android:icon="@drawable/briefcase_icon"
