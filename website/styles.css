@@ -58,7 +58,9 @@ footer {
     padding: 10px;
 }
 .title1 {
-    padding: 10px;
+    padding-left: 10%;
+    padding-right: 60%;
+    display: flow;
 }
 /* Dropdown Button */
 .dropbtn {
@@ -110,5 +112,28 @@ footer {
     padding-left: 40%;
     padding-right: 30%;
     position: relative;
+
+}
+.group1:hover{
+
+}
+
+.group1{
+    padding-top: 5%;
+    padding-left: 30px;
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+.group2{
+ width: 40%;
+
+}
+.group3{
+    width: 40%;
+
+}
+.group4{
 
 }

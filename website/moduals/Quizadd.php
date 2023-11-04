@@ -4,8 +4,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="styles.css">
 
-
-<select class="form-select" aria-label="Default select example">
+<div class="">
+<select class=" form-select" aria-label="Default select example">
     <option selected>Classes</option>
     <option value="1">Class1</option>
     <option value="2">Class2</option>
@@ -23,4 +23,4 @@
 <label for="start">End Date:</label>
 
 <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-<button type="button" class="btn btn-primary">Summit</button>
+<button type="button" class="btn btn-primary">Summit</button></div>
