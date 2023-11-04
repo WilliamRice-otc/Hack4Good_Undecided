@@ -106,6 +106,9 @@ footer {
 .show {display:block;}
 
 .fourm-padding{
-    padding-right: 50px;
-    padding-left: 50px;
+
+    padding-left: 40%;
+    padding-right: 30%;
+    position: relative;
+
 }
