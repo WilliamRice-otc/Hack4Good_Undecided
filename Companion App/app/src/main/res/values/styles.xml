@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavigationViewStyle" parent="Widget.Design.NavigationView" >
+        <item name="itemIconSize">90dp</item> <!-- Adjust this size as necessary -->
+    </style>
+</resources>
