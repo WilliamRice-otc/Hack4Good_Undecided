@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
                     Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_content_main).navigate(R.id.action_global_to_caseworker);
                 } else if (itemId == R.id.nav_account) {
                     // Navigate or execute logic
-                } else if (itemId == R.id.firstFragment) {
-                    Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_content_main).navigate(R.id.action_global_to_firstFragment);
+                } else if (itemId == R.id.ToDoComponent) {
+                    Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_content_main).navigate(R.id.action_global_to_home);
                 }
 
                 drawerLayout.closeDrawer(GravityCompat.START);

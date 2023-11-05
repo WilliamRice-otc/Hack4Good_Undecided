@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.myfirstapp.MainActivity">
     <item
-        android:id="@+id/firstFragment"
+        android:id="@+id/ToDoComponent"
         android:icon="@drawable/book_icon"
         android:title="" />
     <item

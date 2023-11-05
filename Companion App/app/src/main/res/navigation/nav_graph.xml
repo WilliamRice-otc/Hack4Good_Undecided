@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/ToDoComponent">
 
     <!--  Sidebar Actions  -->
     <action
@@ -12,8 +12,8 @@
         />
 
     <action
-        android:id="@+id/action_global_to_firstFragment"
-        app:destination="@id/FirstFragment"
+        android:id="@+id/action_global_to_home"
+        app:destination="@id/ToDoComponent"
         />
 
     <action
@@ -22,10 +22,10 @@
         />
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.myfirstapp.FirstFragment"
+        android:id="@+id/ToDoComponent"
+        android:name="com.example.myfirstapp.ToDoComponent"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_to_do_component">
     </fragment>
     <fragment
         android:id="@+id/fragment_case_worker_contact"
