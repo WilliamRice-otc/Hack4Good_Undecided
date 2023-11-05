@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (itemId == R.id.nav_curriculum) {
                     // Navigate or execute logic
+                    Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_content_main).navigate(R.id.action_global_to_Curriculum);
                 } else if (itemId == R.id.nav_quizzes) {
                     // Navigate or execute logic
                 } else if (itemId == R.id.nav_accountabilities) {
