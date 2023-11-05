@@ -10,10 +10,10 @@
     <include
         android:id="@+id/djoke"
         layout="@layout/fragment_djoke"
-        android:layout_width="411dp"
-        android:layout_height="479dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="1dp">
 
     </include>
 
