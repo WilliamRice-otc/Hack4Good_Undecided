@@ -4,12 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.myfirstapp.MainActivity">
     <item
-        android:id="@+id/firstFragment"
-        android:icon="@drawable/book_icon"
+        android:id="@+id/ToDoComponent"
+        android:icon="@drawable/home_icon"
         android:title="" />
     <item
         android:id="@+id/nav_curriculum"
-        android:icon="@drawable/book_icon"
+        android:icon="@drawable/open_book_icon"
         android:title="" />
     <item
         android:id="@+id/nav_quizzes"

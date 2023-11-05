@@ -52,6 +52,7 @@ public class ToDoComponent extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -61,27 +62,28 @@ public class ToDoComponent extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_to_do_collapsed, container, false);
+        View view = inflater.inflate(R.layout.fragment_to_do_component, container, false);
         ImageButton menuBtn = (ImageButton)view.findViewById(R.id.menuButton);
-        menuBtn.setOnClickListener(new View.OnClickListener(){
+        final LinearLayout mgcBox = (LinearLayout) view.findViewById(R.id.magicBox);
 
+        menuBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                LinearLayout mgcBox = (LinearLayout) v.findViewById(R.id.magicBox);
-                if(mgcBox.getVisibility() == v.VISIBLE){
-                    mgcBox.setVisibility(v.GONE);
-
-
+                ImageButton menuBtn = (ImageButton) v.findViewById(R.id.menuButton);
+                if(mgcBox.getVisibility() == View.VISIBLE){
+                    mgcBox.setVisibility(View.GONE);
                     menuBtn.setImageResource(R.drawable.up_arrow);
 
                 }
                 else {
-                    mgcBox.setVisibility(v.VISIBLE);
+                    mgcBox.setVisibility(View.VISIBLE);
                     menuBtn.setImageResource(R.drawable.down_arrow);
                 }
-
             }
         });
+
+
+
         // Inflate the layout for this fragment
         return view;
     }
