@@ -125,7 +125,7 @@ footer {
     overflow-wrap: anywhere;
     display: flex;
     flex-wrap: wrap;
-    gap: 10%;
+    gap: 20%;
 }
 .group2{
  width: 40%;
@@ -133,8 +133,5 @@ footer {
 }
 .group3{
     width: 40%;
-
-}
-.group4{
 
 }

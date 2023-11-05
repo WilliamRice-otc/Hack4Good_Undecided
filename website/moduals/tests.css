@@ -6,3 +6,6 @@
 .selectpatting{
     padding-top: 5px;
 }
+.hoverglow:hover{
+    text-shadow: 0 0 500px #18cead;
+}

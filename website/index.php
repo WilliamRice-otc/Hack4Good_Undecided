@@ -31,6 +31,9 @@
     </div>
 </nav>
 <div class="group1">
+    <div ID="group5">
+    <?php include 'moduals/pie.php'; ?>
+    </div>
     <div class="group2">
 <?php include 'moduals/quickadd.php'; ?>
 </div>

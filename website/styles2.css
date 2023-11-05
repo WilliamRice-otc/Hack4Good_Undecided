@@ -32,3 +32,19 @@ div{
     background-color: black;
 
 }
+.hoverglow:hover{
+    text-shadow: 0 0 500px #18cead;
+}
+body{
+    background-image: linear-gradient(red, yellow);
+}
+
+#group5{
+    width:10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+.group2{
+    gap: 50px;
+}
