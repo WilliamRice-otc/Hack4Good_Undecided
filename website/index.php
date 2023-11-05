@@ -15,16 +15,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Name</a>
+            <a class="navbar-brand" href="#">Admin</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Settings</a>
+                    <a class="nav-link active" aria-current="page" href="#">Things</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Users</a>
+                    <a class="nav-link active" aria-current="page" href="#">Stuff</a>
                 </li>
 
             </ul>
@@ -33,13 +33,13 @@
 </nav>
 <div class="group1">
     <div class="group2">
-<?php include 'modules/quickadd.php'; ?>
+<?php include 'modules/quickadd.php' ?>
 </div>
     <div class="group3">
-    <?php include 'modules/Quizadd.php'; ?>
+    <?php include 'modules/Quizadd.php' ?>
 </div>
     <div class="group4">
-    <?php include 'modules/userlookup.php'; ?>
+    <?php include 'modules/userlookup.php' ?>
 </div>
 
 </div>
