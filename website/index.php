@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
+    <link rel="stylesheets" type="text/css" href="styles.css">
     <link rel="stylesheets" type="text/css" href="styles2.css">
     <link rel="x-css.css" href="stylesheets/x-css.css">
 </head>
@@ -32,13 +33,13 @@
 </nav>
 <div class="group1">
     <div class="group2">
-<?php include 'moduals/quickadd.php'; ?>
+<?php include 'modules/quickadd.php'; ?>
 </div>
     <div class="group3">
-    <?php include 'moduals/Quizadd.php'; ?>
+    <?php include 'modules/Quizadd.php'; ?>
 </div>
     <div class="group4">
-    <?php include 'moduals/userlookup.php'; ?>
+    <?php include 'modules/userlookup.php'; ?>
 </div>
 
 </div>
