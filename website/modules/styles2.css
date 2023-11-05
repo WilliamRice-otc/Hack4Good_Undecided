@@ -1,4 +1,6 @@
-
+body {
+    width: vw;
+}
 
 ul {
     list-style-type: none;
