@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Acumin;
+    src: url(fonts/AcuminVariableConcept.ttf);
+}
+
 /* Reset some default styles for better consistency */
 body, h1, h2, ul, li, p {
     margin: 0;
@@ -125,7 +130,7 @@ footer {
     overflow-wrap: anywhere;
     display: flex;
     flex-wrap: wrap;
-    gap: 20%;
+    gap: 10%;
 }
 .group2{
  width: 40%;
@@ -134,4 +139,29 @@ footer {
 .group3{
     width: 40%;
 
+}
+.group4{
+
+}
+
+/* card styles */
+
+.card-header-font {
+    font-family: Acumin;
+    font-size: 2.5rem;
+}
+.bg-card-header {
+    background-color: #4DA2A8;
+}
+
+.card-text-font {
+    font-family: Acumin;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+/* card button styles */
+
+.bg-card-btn {
+    background-color: #D55F61;
 }
