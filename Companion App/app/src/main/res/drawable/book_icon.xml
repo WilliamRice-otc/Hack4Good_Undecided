@@ -2,7 +2,8 @@
     android:width="90dp"
     android:height="90dp"
     android:viewportWidth="32"
-    android:viewportHeight="32">
+    android:viewportHeight="32"
+    >
   <path
       android:pathData="M27,6H5C3.343,6 2,7.343 2,9V23C2,24.657 3.343,26 5,26H27C28.657,26 30,24.657 30,23V9C30,7.343 28.657,6 27,6Z"
       android:fillColor="#388E3C"/>
